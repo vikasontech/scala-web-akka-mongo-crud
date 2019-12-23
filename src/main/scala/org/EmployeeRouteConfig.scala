@@ -27,7 +27,7 @@ class EmployeeRouteConfig(implicit val system: ActorSystem) extends JsonUtils {
 
   val getRoute: Route =
 
-    PathDirectives.pathPrefix("user") {
+    PathDirectives.pathPrefix("employee") {
       concat(
         path("create") {
           post {

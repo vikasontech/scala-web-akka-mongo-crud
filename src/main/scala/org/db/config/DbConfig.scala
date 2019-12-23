@@ -26,7 +26,6 @@ object DbConfig {
 
   private val javaCodecs = CodecRegistries.fromCodecs(
     new LocalDateTimeDateCodec(),
-    new LocalDateTimeDateCodec(),
     new BigDecimalStringCodec())
 
   private val registry: CodecRegistry = CodecRegistries.fromProviders(classOf[Employee])
